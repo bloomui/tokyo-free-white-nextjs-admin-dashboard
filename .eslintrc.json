@@ -1,0 +1,19 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "rules": {
+    "prettier/prettier": "off",
+    "@next/next/no-img-element": "off",
+    "jsx-a11y/alt-text": "off",
+    "react/display-name": "off",
+    "eslint-disable-next-line": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/no-unescaped-entities": "off",
+    "react/jsx-max-props-per-line": [
+      1,
+      {
+        "maximum": 2,
+        "when": "multiline"
+      }
+    ]
+  }
+}
