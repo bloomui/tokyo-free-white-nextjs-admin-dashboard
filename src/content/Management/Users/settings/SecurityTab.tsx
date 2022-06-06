@@ -63,7 +63,7 @@ function SecurityTab() {
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
   const handleChangePage = (
-    event: MouseEvent<HTMLButtonElement> | null,
+    _event: MouseEvent<HTMLButtonElement> | null,
     newPage: number
   ) => {
     setPage(newPage);
