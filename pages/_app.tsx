@@ -10,7 +10,6 @@ import createEmotionCache from 'src/createEmotionCache';
 import { SidebarProvider } from 'src/contexts/SidebarContext';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import AdapterDateFns from '@date-io/date-fns';
-
 const clientSideEmotionCache = createEmotionCache();
 
 type NextPageWithLayout = NextPage & {

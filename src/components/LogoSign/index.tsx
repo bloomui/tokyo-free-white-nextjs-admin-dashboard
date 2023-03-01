@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import Link from 'src/components/Link';
 
-const LogoWrapper = styled(Link)(
+const LogoWrapper = styled('div')(
   ({ theme }) => `
         color: ${theme.palette.text.primary};
         display: flex;
