@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import Scrollbar from 'src/components/Scrollbar';
 import { SidebarContext } from 'src/contexts/SidebarContext';
 
 import {
@@ -53,26 +52,24 @@ function Sidebar() {
             theme.palette.mode === 'dark' ? theme.sidebar.boxShadow : 'none'
         }}
       >
-        <Scrollbar>
-          <Box mt={3}>
-            <Box
-              mx={2}
-              sx={{
-                width: 52
-              }}
-            >
-              <Logo />
-            </Box>
-          </Box>
-          <Divider
+        <Box mt={3}>
+          <Box
+            mx={2}
             sx={{
-              mt: theme.spacing(3),
-              mx: theme.spacing(2),
-              background: theme.colors.alpha.trueWhite[10]
+              width: 52
             }}
-          />
-          <SidebarMenu />
-        </Scrollbar>
+          >
+            <Logo />
+          </Box>
+        </Box>
+        <Divider
+          sx={{
+            mt: theme.spacing(3),
+            mx: theme.spacing(2),
+            background: theme.colors.alpha.trueWhite[10]
+          }}
+        />
+        <SidebarMenu />
         <Divider
           sx={{
             background: theme.colors.alpha.trueWhite[10]
@@ -110,26 +107,24 @@ function Sidebar() {
                 : darken(theme.colors.alpha.black[100], 0.5)
           }}
         >
-          <Scrollbar>
-            <Box mt={3}>
-              <Box
-                mx={2}
-                sx={{
-                  width: 52
-                }}
-              >
-                <Logo />
-              </Box>
-            </Box>
-            <Divider
+          <Box mt={3}>
+            <Box
+              mx={2}
               sx={{
-                mt: theme.spacing(3),
-                mx: theme.spacing(2),
-                background: theme.colors.alpha.trueWhite[10]
+                width: 52
               }}
-            />
-            <SidebarMenu />
-          </Scrollbar>
+            >
+              <Logo />
+            </Box>
+          </Box>
+          <Divider
+            sx={{
+              mt: theme.spacing(3),
+              mx: theme.spacing(2),
+              background: theme.colors.alpha.trueWhite[10]
+            }}
+          />
+          <SidebarMenu />
         </SidebarWrapper>
       </Drawer>
     </>

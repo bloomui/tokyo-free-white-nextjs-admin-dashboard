@@ -1,6 +1,5 @@
 import { FC, ChangeEvent, useState } from 'react';
 import { format } from 'date-fns';
-import numeral from 'numeral';
 import PropTypes from 'prop-types';
 import {
   Tooltip,
@@ -298,9 +297,8 @@ const RecentOrdersTable: FC<RecentOrdersTableProps> = ({ cryptoOrders }) => {
                       {cryptoOrder.cryptoCurrency}
                     </Typography>
                     <Typography variant="body2" color="text.secondary" noWrap>
-                      {numeral(cryptoOrder.amount).format(
-                        `${cryptoOrder.currency}0,0.00`
-                      )}
+                      {cryptoOrder.amount}
+                      {cryptoOrder.cryptoCurrency}
                     </Typography>
                   </TableCell>
                   <TableCell align="right">

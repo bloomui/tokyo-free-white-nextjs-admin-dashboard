@@ -9,8 +9,6 @@ import SidebarContent from '@/content/Applications/Messenger/SidebarContent';
 import ChatContent from '@/content/Applications/Messenger/ChatContent';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 
-import Scrollbar from '@/components/Scrollbar';
-
 import {
   Box,
   styled,
@@ -97,18 +95,14 @@ function ApplicationsMessenger() {
           open={mobileOpen}
           onClose={handleDrawerToggle}
         >
-          <Scrollbar>
-            <SidebarContent />
-          </Scrollbar>
+          <SidebarContent />
         </DrawerWrapperMobile>
         <Sidebar
           sx={{
             display: { xs: 'none', lg: 'inline-block' }
           }}
         >
-          <Scrollbar>
-            <SidebarContent />
-          </Scrollbar>
+          <SidebarContent />
         </Sidebar>
         <ChatWindow>
           <ChatTopBar
@@ -130,9 +124,7 @@ function ApplicationsMessenger() {
             <TopBarContent />
           </ChatTopBar>
           <Box flex={1}>
-            <Scrollbar>
-              <ChatContent />
-            </Scrollbar>
+            <ChatContent />
           </Box>
           <Divider />
           <BottomBarContent />
