@@ -52,7 +52,11 @@ function Overview() {
             >
               <Box />
               <Box>
-                <Button variant="contained" sx={{ ml: 2 }}>
+                <Button
+                  href="/dashboards/crypto"
+                  variant="contained"
+                  sx={{ ml: 2 }}
+                >
                   Live Preview
                 </Button>
               </Box>
